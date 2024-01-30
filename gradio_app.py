@@ -54,5 +54,6 @@ if __name__ == "__main__":
     result_dir = os.path.join('./', 'results')
     videocrafter_iface = videocrafter_demo(result_dir)
     videocrafter_iface.queue(concurrency_count=1, max_size=10)
-    videocrafter_iface.launch()
+    # videocrafter_iface.launch()
+    videocrafter_iface.launch(share=False, server_port=8781)
     # videocrafter_iface.launch(server_name='0.0.0.0', server_port=80)
